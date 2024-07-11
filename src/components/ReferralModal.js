@@ -39,7 +39,7 @@ const ReferralModal = ({ isOpen, onClose }) => {
             }, 2000);
         } catch (error) {
             console.error('Error submitting referral:', error);
-            setSubmitError('First, you have to set DATABASE_URL first in dotenv file.');
+            setSubmitError('First, you have to set DATABASE_URL in dotenv file.');
         } finally {
             setIsSubmitting(false);
         }
