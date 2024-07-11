@@ -24,7 +24,7 @@ const ReferralModal = ({ isOpen, onClose }) => {
         setSubmitSuccess(false);
 
         try {
-            const response = await axios.post('http://localhost:3001/api/referrals', formData);
+            const response = await axios.post('https://accredian-backend-task-22ri.onrender.com/api/referrals', formData);
             console.log('Referral submitted:', response.data);
             setSubmitSuccess(true);
             setTimeout(() => {
